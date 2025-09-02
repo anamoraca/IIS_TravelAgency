@@ -24,7 +24,7 @@ public class ActivityReview {
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "activity_booking_id", nullable = false)
     private ActivityBooking activityBooking;
 
